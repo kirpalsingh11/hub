@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Arcade — Hub</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body { background:#020214; color:#fff; font-family:'Arial', sans-serif; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; }
+  h1 { font-size:3em; margin-bottom:20px; text-shadow:0 0 10px #0ff,0 0 20px #0ff; }
+  .games { display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap:20px; width:90%; max-width:900px; }
+  .game-btn { background:#111; border:2px solid #0ff; border-radius:12px; padding:20px; text-align:center; cursor:pointer; transition:0.3s; font-size:1.1em; }
+  .game-btn:hover { background:#0ff; color:#020214; }
+  @media (max-width:600px){ .game-btn{padding:15px; font-size:1em;} }
+</style>
+</head>
+<body>
+<h1>Neon Arcade</h1>
+<div class="games">
+  <div class="game-btn" onclick="location.href='games/cyber-run/index.html'">Cyber Run</div>
+  <div class="game-btn" onclick="location.href='games/galaxy-defender/index.html'">Galaxy Defender</div>
+  <div class="game-btn" onclick="location.href='games/inferno-drift/index.html'">Inferno Drift</div>
+  <div class="game-btn" onclick="location.href='games/shadow-strike/index.html'">Shadow Strike</div>
+  <div class="game-btn" onclick="location.href='games/chrono-flip/index.html'">Chrono Flip</div>
+  <div class="game-btn" onclick="location.href='games/rogue-protocol/index.html'">Rogue Protocol</div>
+  <div class="game-btn" onclick="location.href='games/sky-forge/index.html'">Sky Forge</div>
+  <div class="game-btn" onclick="location.href='games/Car-game/index.html'">Car-game</div>
+  <div class="game-btn" onclick="location.href='games/pixel-arena/index.html'">Pixel Arena</div>
+  <div class="game-btn" onclick="location.href='games/mana-merge/index.html'">Mana Merge</div>
+</div>
+</body>
+</html>

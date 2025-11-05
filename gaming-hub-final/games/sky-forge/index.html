@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sky-Forge - Neon Arcade</title>
+<style>
+body { margin:0; overflow:hidden; background:#010118; font-family:'Orbitron',sans-serif; color:#0ff; text-align:center;}
+#ui { position:absolute; top:10px; left:10px; z-index:2; color:#0ff; text-shadow:0 0 8px #0ff; font-size:20px;}
+button { background:transparent; border:2px solid #0ff; color:#0ff; font-family:'Orbitron',sans-serif; font-size:18px; padding:8px 16px; border-radius:10px; cursor:pointer; }
+button:hover { background:#0ff2; }
+#menu { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; z-index:3; }
+canvas { display:block; margin:0 auto; background:#010118; border:2px solid #0ff; }
+#touchControls { position:absolute; bottom:20px; width:100%; display:flex; justify-content:center; z-index:4; }
+.touchBtn { width:60px; height:60px; margin:0 15px; border-radius:50%; border:2px solid #0ff; background:#0ff2; color:#000; font-size:30px; text-align:center; line-height:56px; user-select:none; }
+</style>
+</head>
+<body>
+<div id="ui">
+  HP: <span id="hp">100</span> | Score: <span id="score">0</span>
+  <div>
+    <button id="restartBtn">Restart</button>
+    <button onclick="window.location.href='../../index.html'">Back to Hub</button>
+  </div>
+</div>
+
+<div id="menu">
+  <h1 style="color:#0ff; text-shadow:0 0 15px #0ff; font-size:40px;">SKY-FORGE</h1>
+  <button id="startBtn">Start Game</button>
+</div>
+
+<canvas id="gameCanvas" width="500" height="500"></canvas>
+
+<div id="touchControls">
+  <div class="touchBtn" id="leftBtn">&#8592;</div>
+  <div class="touchBtn" id="upBtn">&#8593;</div>
+  <div class="touchBtn" id="rightBtn">&#8594;</div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
